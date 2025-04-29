@@ -1715,25 +1715,8 @@ async def txt_handler(bot: Client, m: Message):
     await m.reply_text("🔰Done🔰")
     await m.reply_text("✨Thankyou For Choosing")
 
-
-from flask import Flask
-from threading import Thread
-
-bot = Client("bot", api_id=..., api_hash=..., bot_token=...)
-
-# Web server for Render
-app = Flask(__name__)
-
-@app.route("/")
-def hello():
-    return "Bot is alive!"
-
-def run_web():
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
-
-# Start Flask in a thread and bot in main thread
+bot.run()
 if __name__ == "__main__":
-    Thread(target=run_web).start()
-    bot.run()
+    asyncio.run(main())
 
 
