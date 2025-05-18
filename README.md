@@ -68,6 +68,13 @@ export BOT_TOKEN=your_bot_token
 # Run the bot
 python3 bot.py
 ```
+---
+
+### 📸 Screenshots
+<p align="center">
+  <img src="img/screenshot1.jpg" width="400"/>
+  <img src="img/screenshot2.jpg" width="400"/>
+</p>
 
 ---
 
