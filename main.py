@@ -38,7 +38,7 @@ photo = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 cpphoto = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 appxzip = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 my_name = "🅂🄿🄸🄳🅈"
-CHANNEL_ID = "-1002607772171"
+CHANNEL_ID = "-1002607772171"##change it with your channel 🆔 
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
@@ -47,7 +47,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("https://text-leech-bot-for-render.onrender.com/")
+    return web.json_response("your_render_url") ## change it with your host url
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
@@ -163,7 +163,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Engineer","upload"]) )
+@bot.on_message(filters.command(["king","upload"]) )
 async def txt_handler(bot: Client, m: Message):
     await m.delete()
     
